@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color:linear-gradient(to bottom, #c24efd 30%, #54c4fc 100%); 
+  --primary-color:linear-gradient(to bottom,  #dea2fc 30%, #6bcaf9 100%); 
   --primary-color-dark:linear-gradient(to bottom, #a145ce 30%, #4bacdc 100%);
   --text-dark: #020617;
   --text-light: #1e293b;
