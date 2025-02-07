@@ -34,8 +34,6 @@
   background: var(--primary-color-dark);  
   box-shadow: 5px 5px 20px rgba(15, 2, 2, 0.473);
 }
-p{ font-size:10px;
-}
 
 img {
   display: flex;
