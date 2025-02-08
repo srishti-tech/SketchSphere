@@ -5,9 +5,9 @@ const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
-
   const isOpen = navLinks.classList.contains("open");
   menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+
 });
 
 navLinks.addEventListener("click", (e) => {
@@ -20,39 +20,42 @@ const scrollRevealOption = {
   origin: "bottom",
   duration: 1000,
 };
-
+ScrollReveal().reveal(".nav__logo", {
+  ...scrollRevealOption,
+  delay: 100,
+});
 ScrollReveal().reveal(".container__left h1", {
   ...scrollRevealOption,
 });
 ScrollReveal().reveal(".container__left .container__btn", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 200,
 });
 
 ScrollReveal().reveal(".container__right h4", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1000,
 });
 ScrollReveal().reveal(".container__right h2", {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 1500,
 });
 ScrollReveal().reveal(".container__right h3", {
   ...scrollRevealOption,
-  delay: 3000,
+  delay: 2000,
 });
 ScrollReveal().reveal(".container__right p", {
   ...scrollRevealOption,
-  delay: 3500,
+  delay: 2500,
 });
 
 ScrollReveal().reveal(".container__right .tent-1", {
   duration: 1000,
-  delay: 4000,
+  delay: 3000,
 });
 ScrollReveal().reveal(".container__right .tent-2", {
   duration: 1000,
-  delay: 4500,
+  delay: 3500,
 });
 
 ScrollReveal().reveal(".location", {
@@ -69,23 +72,6 @@ ScrollReveal().reveal(".socials span", {
 });
 
 
-
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
-
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute(
-    "class",
-    isOpen ? "ri-close-line" : "ri-menu-3-line"
-  );
-});
-
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-3-line");
-});
-
-
 ScrollReveal().reveal(".header__image img", {
   ...scrollRevealOption,
   origin: "right",
@@ -97,7 +83,7 @@ ScrollReveal().reveal(".header__content h1", {
 });
 ScrollReveal().reveal(".header__content .section__description", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1500,
 });
 ScrollReveal().reveal(".header__content form", {
   ...scrollRevealOption,
@@ -128,9 +114,10 @@ const swiper = new Swiper(".swiper", {
   loop: true,
 });
 
-ScrollReveal().reveal(".explore__image img", {
+ScrollReveal().reveal(".swiper-slide", {
   ...scrollRevealOption,
   origin: "right",
+  delay: 100,
 });
 ScrollReveal().reveal(".explore__content .section__subheader", {
   ...scrollRevealOption,
@@ -153,6 +140,19 @@ ScrollReveal().reveal(".explore__grid div", {
   delay: 2500,
   interval: 500,
 });
+
+ScrollReveal().reveal(".subscribe__container .section__header", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".subscribe__container .section__description", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".subscribe__content", {
+  ...scrollRevealOption,
+  delay:500,
+});
+
 
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
@@ -180,14 +180,11 @@ prev.addEventListener("click", (e) => {
   }
 });
 
-ScrollReveal().reveal(".subscribe__container .section__header", {
-  ...scrollRevealOption,
-});
-ScrollReveal().reveal(".subscribe__container .section__description", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".subscribe__container form", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
+function sendMail(){
+  let parms={
+      name:document.getElementById("name").value,
+      email:document.getElementById("email").value,
+      message:document.getElementById("message").value,
+  }
+  emailjs.send("service_j1i27p2","template_6636y1g",parms).then(alert("Email sent!"))
+}
