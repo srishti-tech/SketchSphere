@@ -3,30 +3,30 @@ This project is a responsive landing page designed to showcase art. It includes 
 
 
 ## 📌 Features
-* Header Section
-Company logo (left-aligned)
+* Header Section-
+Company logo (left-aligned).
 Navigation bar (Home, About, Features, Contact)
 
-* Hero Section
-Large banner image or background
-Catchy headline and subheading
-"Contact Us" button
+* Hero Section -
+Large banner image or background.
+Catchy headline and subheading.
+"Contact Us" button.
 
-* Features Section
-At least three key features with icons & descriptions
+* Features Section -
+At least three key features with icons & descriptions.
 
-* About Section
-Short paragraph about the company/service
+* About Section -
+Short paragraph about the company/service.
 
-* Testimonials
-2-3 customer reviews with images and names
+* Testimonials -
+2-3 customer reviews with images and names.
 
-* Contact Section
-Form with Name, Email, Message, and Submit button
+* Contact Section -
+Form with Name, Email, Message, and Submit button.
 
-* Footer Section
-Social media links
-Copyright notice
+* Footer Section -
+Social media links.
+Copyright notice.
 
 * Animations for display.
 
@@ -38,5 +38,5 @@ Copyright notice
 * JavaScript – Interactive elements.
 
 ## 🌟 Future Improvements
-* Improve SEO optimization
-* Integrate with a backend for dynamic content
+* Improve SEO optimization.
+* Integrate with a backend for dynamic content.
