@@ -29,24 +29,24 @@ ScrollReveal().reveal(".container__left h1", {
 });
 ScrollReveal().reveal(".container__left .container__btn", {
   ...scrollRevealOption,
-  delay: 200,
+  delay: 100,
 });
 
 ScrollReveal().reveal(".container__right h4", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 900,
 });
 ScrollReveal().reveal(".container__right h2", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 1200,
 });
 ScrollReveal().reveal(".container__right h3", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1500,
 });
 ScrollReveal().reveal(".container__right p", {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 2000,
 });
 
 ScrollReveal().reveal(".container__right .tent-1", {
@@ -117,7 +117,7 @@ const swiper = new Swiper(".swiper", {
 ScrollReveal().reveal(".swiper-slide", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 100,
+  delay: 150,
 });
 ScrollReveal().reveal(".explore__content .section__subheader", {
   ...scrollRevealOption,
