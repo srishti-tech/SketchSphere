@@ -187,10 +187,21 @@ prev.addEventListener("click", (e) => {
 });
 
 function sendMail(){
-  let parms={
-      name:document.getElementById("name").value,
-      email:document.getElementById("email").value,
-      message:document.getElementById("message").value,
-  }
+  let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            // Validate fields
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all fields before submitting.");
+                return;
+            }
+
+            // Prepare the email parameters
+            let params = {
+                name: name,
+                email: email,
+                message: message
+            };
   emailjs.send("service_j1i27p2","template_6636y1g",parms).then(alert("Email sent!"))
-}
+                    document.getElementById("contact-form").reset();}
