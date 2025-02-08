@@ -203,5 +203,5 @@ function sendMail(){
                 email: email,
                 message: message
             };
-  emailjs.send("service_j1i27p2","template_6636y1g",parms).then(alert("Email sent!"))
+  emailjs.send("service_j1i27p2","template_6636y1g",params).then(alert("Email sent!"))
                     document.getElementById("contact-form").reset();}
