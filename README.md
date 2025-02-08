@@ -1,5 +1,5 @@
 # SketchSphere
-This project is a responsive landing page designed to showcase a product, service, or company. It includes essential sections like a hero section, features, testimonials, and contact form. The project helps interns practice HTML, CSS, JavaScript, and responsive design principles.
+This project is a responsive landing page designed to showcase art. It includes essential sections like a hero section, features, testimonials, and contact form. It helps connect all the artist together.This project helps us practice HTML, CSS, JavaScript, and responsive design principles.
 
 
 ## 📌 Features
