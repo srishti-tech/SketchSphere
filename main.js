@@ -1,16 +1,22 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
-
+const containertop= document.getElementsByClassName("container");
 
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
   const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-
+  menuBtnIcon.setAttribute("class",isOpen ? "ri-close-line" : "ri-menu-line" );
+   // Fix: Apply style to the first element of the collection
+   if (containertop.length > 0) {
+    containertop[0].style.top = isOpen? "140px":"0px"; 
+  }
 });
 
 navLinks.addEventListener("click", (e) => {
+  if (containertop.length > 0) {
+    containertop[0].style.top = "0px"; 
+  }
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
